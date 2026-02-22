@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Vinted Notifications Unlocker Optionen</title>
+  <style>
+    body { font-family: sans-serif; max-width: 350px; padding: 20px; }
+    label { display: block; margin: 12px 0 4px; }
+    input[type=number] { width: 60px; }
+    button { margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <h2>Optionen</h2>
+  <form id="options-form">
+    <label for="maxItems">Items pro Seite:</label>
+    <input type="number" id="maxItems" min="1" max="100" value="20">
+    <button type="submit">Speichern</button>
+    <div id="status" style="margin-top:10px;color:green;"></div>
+  </form>
+  <script src="options.js"></script>
+</body>
+</html>
